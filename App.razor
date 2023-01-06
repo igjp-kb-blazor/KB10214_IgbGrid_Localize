@@ -1,0 +1,25 @@
+﻿<div>
+
+    <IgbGrid style="max-width:900px; margin: 40px auto;"
+             AutoGenerate="false"
+             Data="_AthletesData"
+             FilterMode="FilterMode.ExcelStyleFilter"
+             AllowFiltering="true"
+             PrimaryKey="@nameof(AthletesDataItem.AthleteNumber)"
+             ResourceStrings="GridResourceStrings.JA">
+        @*   👆 ResourceStrings パラメーターに、ローカライズされたテキストを IgbGridResourceStrings オブジェクトの形で渡す *@
+
+        <IgbColumn Field="Name" Header="Athlete" />
+        <IgbColumn Field="CountryName" Header="Country" />
+        <IgbColumn Field="BeatsPerMinute" Header="Beats Per Minute" />
+        <IgbColumn Field="TopSpeed" Header="Top Speed" />
+        <IgbColumn Field="TrackProgress" Header="Progress" />
+
+    </IgbGrid>
+
+</div>
+
+@code
+{
+    private AthletesData _AthletesData = new();
+}
