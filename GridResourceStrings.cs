@@ -1,6 +1,4 @@
-﻿using IgniteUI.Blazor.Controls;
-
-namespace KB10214_IgbGrid_Localize;
+﻿namespace IgniteUI.Blazor.Controls;
 
 #pragma warning disable BL0005 // Component parameter should not be set outside of its component.
 public static class GridResourceStrings
@@ -92,6 +90,7 @@ public static class GridResourceStrings
         Igx_grid_excel_boolean_filter = "ブール値フィルター",
         Igx_grid_excel_currency_filter = "通貨フィルター",
         Igx_grid_excel_custom_filter = "カスタム フィルター...",
+        Igx_grid_excel_matches_count = "{0} 件の一致",
         Igx_grid_excel_no_matches = "一致がありませんでした",
         Igx_grid_advanced_filter_title = "高度なフィルター",
         Igx_grid_advanced_filter_and_group = "\"And\" グループ",
@@ -170,7 +169,6 @@ public static class GridResourceStrings
         Igx_grid_max_length_validation_error = "入力の長さは {0} 文字以下である必要があります",
         Igx_grid_email_validation_error = "有効なメール アドレスを入力してください",
         Igx_grid_pattern_validation_error = "入力が所定のパターンに一致しません",
-        Igx_grid_pivot_no_aggregator = "{0} の有効なアグリゲーターが見つかりません。有効な aggregatorName または aggregator を設定してください。"
     };
 }
 #pragma warning restore BL0005 // Component parameter should not be set outside of its component.
