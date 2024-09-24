@@ -1,10 +1,8 @@
 ﻿namespace KB10214_IgbGrid_Localize.Data;
 
-public class AthletesData : List<AthletesDataItem>
+public static class AthletesData
 {
-    public AthletesData()
-    {
-        this.AddRange(new AthletesDataItem[] {
+    public static List<AthletesDataItem> GetSampleData() => [
         new ()
         {
             Id = 84,
@@ -2594,6 +2592,5 @@ public class AthletesData : List<AthletesDataItem>
             TrackProgress = 2,
             CountryFlag = @"https://static.infragistics.com/xplatform/images/flags/iso2/ye.png",
             CountryName = @"Yemen"
-        }});
-    }
+        }];
 }
